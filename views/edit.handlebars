@@ -1,0 +1,40 @@
+<h1> WearON </h1>
+
+<form>
+		<h><b> User's Data Storage Information </b></h>
+		<hr/>
+		Your Thinkspeak API key: 
+		<input type="text" name="thingspeakAPI" size="20"> </input>
+		<br>
+		<br>
+		<input type="checkbox" name="analogSensor1"> Analog Sensor 1</input>
+		<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp Field Name:
+		<input type="text" name="fieldName1" size="20"> </input>
+		<br>
+		<br>
+		<input type="checkbox" name="analogSensor2"> Analog Sensor 2</input>
+		<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp Field Name:
+		<input type="text" name="fieldName2" size="20"> </input>
+		<br>
+		<br>
+		<hr/>
+		<input type="submit" value="Generate Token Key"></input>
+		</form>
+
+		<hr/>
+		<h2 id = "token"><b>Token Key: {{id}}</b></h2>
+		<p>Thingspeak API Key: {{token.thingspeakAPI}}<br>Analog Sensor 1: {{token.analogSensor1}} <br>Field Name: {{token.fieldName1}}<br>Analog Sensor 2: {{token.analogSensor2}} <br>Field Name: {{token.fieldName2}} </p>
+		<div id = "instruction"> *Input Token Key into WearON phone app to generate custom application for your project</div>
+		<hr/>
+
+		<form action="http://localhost:8081/main" method="GET">
+		<input type="submit" value="Generate New Token Key"></input>
+		</form>
+		<br>
+		<br>
+
+
+
+

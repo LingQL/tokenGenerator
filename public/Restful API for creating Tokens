@@ -1,0 +1,14 @@
+Restful API for creating Tokens
+
+GET /tokens  - return a list of all tokens known to the server - don't want
+*GET /tokens/:id - return just a single token - do want
+*POST /tokens - creates a new token - do want
+PUT /tokens/:id - updates a single token - don't need just now
+DELETE /tokens/:id - deletes a single token - don't need just now
+
+
+GET /tokens - have the form in this view -> not done
+POST /tokens
+GET /tokens/:id - human version
+
+GET /api/tokens/:id - just returns JSON for the phone app

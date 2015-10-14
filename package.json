@@ -1,0 +1,19 @@
+{
+  "name": "TokenGenerator",
+  "version": "1.0.0",
+  "description": "package.json",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+   "engines": {
+    "node": "0.12.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express-handlebars": "^2.0.1"
+  }
+}
